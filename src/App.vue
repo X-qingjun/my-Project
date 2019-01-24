@@ -1,29 +1,56 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <keep-alive>
+      <router-view/>
+    </keep-alive>
+    <tab-bar v-model="selectIndex">
+      <tab-item title="首页" class="iconfont icon-zanting"></tab-item>
+      <tab-item title="分类" class="iconfont icon-fenlei"></tab-item>
+      <tab-item title="穿搭" class="iconfont icon-jiudian"></tab-item>
+      <tab-item title="购物车" class="iconfont icon-waimai"></tab-item>
+      <tab-item title="个人" class="iconfont icon-wode"></tab-item>
+    </tab-bar>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+export default {
+  data() {
+    return {
+      selectIndex: 0
+    };
+  },
+  computed: {
+    appPath() {
+      switch (this.selectIndex) {
+        case 0:
+          return "/home";
+        case 1:
+          return "/category";
+        case 2:
+          return "/wear";
+        case 3:
+          return "/cart";
+        case 4:
+          return "/mine";
+      }
+    }
+  },
+  watch: {
+    appPath: {
+      handler(newVal) {
+        this.$router.push(newVal);
+      },
+      immediate: true
     }
   }
+};
+</script>
+
+<style lang="scss" scoped>
+.iconfont {
+  font-size: 28px;
 }
 </style>
+
+
