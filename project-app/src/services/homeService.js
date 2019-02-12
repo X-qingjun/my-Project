@@ -10,7 +10,15 @@ export function getHomeCateList() {
     return new Promise((resolve, reject) => {
         FetchGet(API.CATE_LIST_URL)
             .then(data => {
-                resolve(data);
+                resolve({
+                    lists: data.catelist.map(({
+                        id,
+                        shop
+                    }) => ({
+                        id,
+                        shop
+                    }))
+                })
             })
     })
 };
