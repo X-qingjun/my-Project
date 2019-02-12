@@ -39,7 +39,8 @@ export default {
 }
 .tab span {
   display: block;
-  font-size: 12px;
+  font-size: 0.1rem;
   color: #5a5a5a;
+  margin-top: 0.09rem;
 }
 </style>

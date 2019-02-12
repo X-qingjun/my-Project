@@ -31,10 +31,13 @@ export default {
 <style scoped>
 .tabs {
   width: 100%;
-  height: 49px;
+  height: 0.49rem;
   position: absolute;
   left: 0;
   bottom: 0;
   display: flex;
+  background: #fafafa;
+  padding-top: 0.05rem;
+  box-sizing: border-box;
 }
 </style>

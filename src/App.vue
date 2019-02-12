@@ -4,11 +4,11 @@
       <router-view/>
     </keep-alive>
     <tab-bar v-model="selectIndex">
-      <tab-item title="首页" class="iconfont icon-zanting"></tab-item>
+      <tab-item title="首页" class="iconfont icon-solid-home"></tab-item>
       <tab-item title="分类" class="iconfont icon-fenlei"></tab-item>
-      <tab-item title="穿搭" class="iconfont icon-jiudian"></tab-item>
-      <tab-item title="购物车" class="iconfont icon-waimai"></tab-item>
-      <tab-item title="个人" class="iconfont icon-wode"></tab-item>
+      <tab-item title="穿搭" class="iconfont icon-yifupifu"></tab-item>
+      <tab-item title="购物车" class="iconfont icon-gouwuche"></tab-item>
+      <tab-item title="个人" class="iconfont icon-character"></tab-item>
     </tab-bar>
   </div>
 </template>
@@ -49,7 +49,7 @@ export default {
 
 <style lang="scss" scoped>
 .iconfont {
-  font-size: 28px;
+  font-size: 0.2rem;
 }
 </style>
 
