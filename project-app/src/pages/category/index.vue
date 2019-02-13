@@ -1,5 +1,6 @@
 <template>
   <div id="categroy" class="page">
+    <!-- 头部搜索框 -->
     <header class="header">
       <p>
         <span class="icon">
@@ -8,11 +9,26 @@
         <span>输入关键字</span>
       </p>
     </header>
+    
+    <!-- 头部导航列表 -->
+    <cateNav v-model="selectIndex" ref="nav"/>
+
+
   </div>
 </template>
 
 <script>
-export default {};
+import cateNav from "../../components/cateCom/cateNav";
+export default {
+  components: {
+    cateNav
+  },
+  data() {
+    return {
+      selectIndex: 0
+    };
+  }
+};
 </script>
 
 <style lang="scss" scoped>
@@ -27,8 +43,9 @@ export default {};
     justify-content: space-around;
     padding: 0.08rem 0.05rem;
     box-sizing: border-box;
+    z-index: 1;
     p {
-      width: 3.5rem;
+      width: 3.4rem;
       font-size: 0.15rem;
       background: #ededed;
       color: #5a5a5a;
