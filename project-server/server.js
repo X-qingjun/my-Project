@@ -41,20 +41,7 @@ app.get(api.CATENAV_LIST_URL, (req, res) => {
     res.json(result);
 });
 
-// 分类侧边栏导航列表
-app.get(api.CATELEFT_LIST_URL, (req, res) => {
-    let result = mock({
-        message: 'ok',
-        status: 0,
-        data: {
-            'catelist|9': [{
-                'id|+1': 4123498,
-                'shop|+1': ['全部商品','上新爆款','上装类','衬衫类','针织衫','外套类','裤和裙子','家具和内着','配件',],
-            }]
-        }
-    })
-    res.json(result);
-});
+
 
 // app.get('/api/film/nowplaying/list', (req, res) => {
 //     let result = mock({
