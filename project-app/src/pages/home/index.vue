@@ -15,14 +15,18 @@
     </header>
 
     <homeNav v-model="selectIndex" ref="nav"/>
+
+    <homeContent v-show="selectIndex===0"/>
   </div>
 </template>
 
 <script>
 import homeNav from "../../components/homeCom/homeNav";
+import homeContent from "../../components/homeCom/homeContent";
 export default {
   components: {
-    homeNav
+    homeNav,
+    homeContent
   },
   data() {
     return {

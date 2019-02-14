@@ -1,20 +1,18 @@
 <template>
-  <div class="nav-wrap">
-    <nav class="nav">
-      <div class="nav-bar" ref="bar" v-show="!showMenu">
-        <ul class="nav-list" ref="list">
-          <li
-            v-for="(item, index) in list"
-            :key="item.id"
-            class="nav-item"
-            :class="{active: value===index}"
-            ref="item"
-            @click="selectTab(index)"
-          >{{item.shop}}</li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+  <nav class="nav">
+    <div class="nav-bar" ref="bar" v-show="!showMenu">
+      <ul class="nav-list" ref="list">
+        <li
+          v-for="(item, index) in list"
+          :key="item.id"
+          class="nav-item"
+          :class="{active: value===index}"
+          ref="item"
+          @click="selectTab(index)"
+        >{{item.shop}}</li>
+      </ul>
+    </div>
+  </nav>
 </template>
 
 <script>
@@ -67,10 +65,9 @@ export default {
 <style lang="scss" scoped>
 .nav {
   width: 100%;
-  height: 26px;
+  height: 0.26rem;
   position: absolute;
   left: 0;
-  z-index: 2;
   .nav-bar {
     overflow: hidden;
     .nav-list {
@@ -78,13 +75,13 @@ export default {
     }
     .nav-item {
       display: inline-block;
-      padding: 0 10px;
-      font-size: 14px;
-      line-height: 26px;
+      padding: 0 0.1rem;
+      font-size: 0.14rem;
+      line-height: 0.26rem;
       color: #333;
       &.active {
         color: #b4282d;
-        border-bottom: 1px solid #b4282d;
+        border-bottom: 0.01rem solid #b4282d;
       }
       box-sizing: border-box;
     }

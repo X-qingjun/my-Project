@@ -22,3 +22,40 @@ export function getHomeCateList() {
             })
     })
 };
+
+//请求首页轮播图数据;
+export function getHomeFocusList() {
+    return new Promise((resolve, reject) => {
+        FetchGet(API.HOME_BANNER_LIST_URL)
+            .then(data => {
+                resolve({
+                    bannerlists: data.bannerlist.map(({
+                        id,
+                        img
+                    }) => ({
+                        id,
+                        img
+                    }))
+                })
+            })
+    })
+}
+
+
+// 首页协议数据;
+export function getHomePolicyList() {
+    return new Promise((resolve, reject) => {
+        FetchGet(API.POLICY_LIST_URL)
+            .then(data => {
+                resolve({
+                    policylists: data.policylist.map(({
+                        id,
+                        info
+                    }) => ({
+                        id,
+                        info
+                    }))
+                })
+            })
+    })
+}

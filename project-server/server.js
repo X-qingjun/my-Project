@@ -11,6 +11,7 @@ const axios = require('axios');
 
 const app = express();
 
+//首页分类导航数据
 app.get(api.CATE_LIST_URL, (req, res) => {
     let result = mock({
         message: 'ok',
@@ -25,25 +26,38 @@ app.get(api.CATE_LIST_URL, (req, res) => {
     res.json(result);
 })
 
-// app.get('/api/film/nowplaying/list', (req, res) => {
-//     let result = mock({
-//         status: 0,
-//         message: 'ok',
-//         data: {
-//             'playingList|20': [{
-//                 'id|+1': 13412318,
-//                 name: '@ctitle',
-//                 'img|1': ['https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2035844616,1442845443&fm=26&gp=0.jpg', 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3145341095,1749140843&fm=15&gp=0.jpg', 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=659349598,2354418033&fm=200&gp=0.jpg'],
-//                 'rate|0-5.1': 0,
-//                 'actors|2-10': ['@cname'],
-//                 'area|1': ['中国', '美国', '英国', '日本', '印度'],
-//                 'duration|90-150': 0,
-//                 'type|1': ['2D', '3D']
-//             }]
-//         }
-//     });
-//     res.json(result);
-// })
+//首页轮播图数据
+app.get(api.HOME_BANNER_LIST_URL, (req, res) => {
+    let result = mock({
+        message: 'ok',
+        status: 0,
+        data: {
+            'bannerlist|7': [{
+                'id|+1': 100500,
+                name: '@ctitle',
+                img: "@image('375x180', '@color', '@name')"
+            }]
+        }
+    })
+    res.json(result);
+})
+
+
+// 首页协议
+app.get(api.POLICY_LIST_URL, (req, res) => {
+    let result = mock({
+        message: 'ok',
+        status: 0,
+        data: {
+            'policylist|3': [{
+                'id|+1': 426230,
+                'info|+1': ['累计评价', '满￥99顺丰包邮', '退货补贴'],
+            }]
+        }
+    })
+    res.json(result);
+})
+
 
 app.listen('9090', 'localhost', (error) => {
     if (error) {
