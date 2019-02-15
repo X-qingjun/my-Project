@@ -38,21 +38,6 @@ app.get(api.CATE_LIST_URL, (req, res) => {
     res.json(result);
 });
 
-// 分类头部导航列表
-app.get(api.CATENAV_LIST_URL, (req, res) => {
-    let result = mock({
-        message: 'ok',
-        status: 0,
-        data: {
-            'catelist|6': [{
-                'id|+1': 4123498,
-                'shop|+1': ['女装', '男装', '童装', '婴幼儿', '运动', '休闲'],
-            }]
-        }
-    })
-    res.json(result);
-});
-
 
 
 // app.get('/api/film/nowplaying/list', (req, res) => {

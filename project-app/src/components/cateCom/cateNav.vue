@@ -10,7 +10,7 @@
             :class="{active: value===index}"
             ref="item"
             @click="selectTab(index)"
-          >{{item.shop}}</li>
+          >{{item}}</li>
         </ul>
       </div>
     </nav>
@@ -18,13 +18,12 @@
 </template>
 
 <script>
-import { getCateNavList } from "../../services/cateService";
 import BScroll from "better-scroll";
 export default {
   props: ["value"],
   data() {
     return {
-      list: [],
+      list: ['女装', '男装', '童装', '婴幼儿', '运动', '休闲'],
       showMenu: false
     };
   },
@@ -40,10 +39,6 @@ export default {
     }
   },
   created() {
-    //请求分类数据
-    getCateNavList().then(data => {
-      // console.log(data.list);
-      this.list = data.lists;
       this.$nextTick(() => {
         //识别宽度
         let width = 0;
@@ -59,7 +54,6 @@ export default {
           click: true
         });
       });
-    });
   }
 };
 </script>
