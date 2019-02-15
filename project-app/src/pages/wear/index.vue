@@ -1,6 +1,6 @@
 <template>
   <div id="wear" class="page">
-    <h1>穿搭</h1>
+    <header>穿搭</header>
   </div>
 </template>
 
@@ -8,8 +8,7 @@
 export default {};
 </script>
 
-<style>
-#wear {
-  background: papayawhip;
-}
+<style lang="scss" scoped>
+  
 </style>
+

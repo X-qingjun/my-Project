@@ -23,11 +23,7 @@ const axios = require('axios');
 
 const app = express();
 
-<<<<<<< HEAD
-//首页分类导航数据
-=======
 // 首页导航列表
->>>>>>> 9d633741e94cd3fb88470b1e6e4b861caeaa8ec3
 app.get(api.CATE_LIST_URL, (req, res) => {
     let result = mock({
         message: 'ok',
