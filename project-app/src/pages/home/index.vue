@@ -38,7 +38,6 @@ export default {
 
 <style lang="scss" scoped>
 #home {
-  background: palegoldenrod;
   .header {
     width: 100%;
     height: 0.44rem;
