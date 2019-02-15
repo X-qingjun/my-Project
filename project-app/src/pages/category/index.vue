@@ -11,7 +11,7 @@
     </header>
 
     <!-- 头部导航列表 -->
-    <cateNav v-model="selectIndex" ref="nav"/>
+    <cateNav v-model="selectIndex2" ref="nav"/>
 
     <!-- 侧边栏导航 -->
     <div class="wrap">
@@ -47,6 +47,7 @@ export default {
   data() {
     return {
       selectIndex: 0,
+      selectIndex2: 0,
       navData: [
         "全部商品",
         "上新爆款",
@@ -68,67 +69,67 @@ export default {
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "白衬衫",
+              name: "七分/长衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "情侣衫",
+              name: "七分/长衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "蝙蝠衫",
+              name: "七分/长衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "卫衣",
+              name: "七分/长衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "羽绒服",
+              name: "七分/长衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "大长衣",
+              name: "七分/长衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "薄衬衫",
+              name: "七分/长衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "加长卫衣",
+              name: "七分/长衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "裤子",
+              name: "七分/长衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "毛巾",
+              name: "七分/长衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "加长羽绒服",
+              name: "七分/长衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "小格子",
+              name: "七分/长衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "拖鞋",
+              name: "七分/长衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "袜子",
+              name: "七分/长衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "小米加步枪",
+              name: "七分/长衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "多米诺",
+              name: "七分/长衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             }
           ]
@@ -138,7 +139,7 @@ export default {
             "https://via.placeholder.com/242x96/0c00aF/808080 ?Text=上装类",
           shopList: [
             {
-              name: "七分/长衫",
+              name: "白衬衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
@@ -146,63 +147,63 @@ export default {
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "情侣衫",
+              name: "白衬衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "蝙蝠衫",
+              name: "白衬衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "卫衣",
+              name: "白衬衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "羽绒服",
+              name: "白衬衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "大长衣",
+              name: "白衬衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "薄衬衫",
+              name: "白衬衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "加长卫衣",
+              name: "白衬衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "裤子",
+              name: "白衬衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "毛巾",
+              name: "白衬衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "加长羽绒服",
+              name: "白衬衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "小格子",
+              name: "白衬衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "拖鞋",
+              name: "白衬衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "袜子",
+              name: "白衬衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "小米加步枪",
+              name: "白衬衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "多米诺",
+              name: "白衬衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             }
           ]
@@ -212,71 +213,71 @@ export default {
             "https://via.placeholder.com/242x96/5e00dF/808080 ?Text=上装类",
           shopList: [
             {
-              name: "七分/长衫",
+              name: "上装类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "白衬衫",
+              name: "上装类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "情侣衫",
+              name: "上装类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "蝙蝠衫",
+              name: "上装类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "卫衣",
+              name: "上装类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "羽绒服",
+              name: "上装类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "大长衣",
+              name: "上装类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "薄衬衫",
+              name: "上装类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "加长卫衣",
+              name: "上装类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "裤子",
+              name: "上装类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "毛巾",
+              name: "上装类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "加长羽绒服",
+              name: "上装类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "小格子",
+              name: "上装类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "拖鞋",
+              name: "上装类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "袜子",
+              name: "上装类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "小米加步枪",
+              name: "上装类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "多米诺",
+              name: "上装类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             }
           ]
@@ -286,71 +287,71 @@ export default {
             "https://via.placeholder.com/242x96/03003F/808080 ?Text=上装类",
           shopList: [
             {
-              name: "七分/长衫",
+              name: "衬衫类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "白衬衫",
+              name: "衬衫类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "情侣衫",
+              name: "衬衫类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "蝙蝠衫",
+              name: "衬衫类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "卫衣",
+              name: "衬衫类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "羽绒服",
+              name: "衬衫类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "大长衣",
+              name: "衬衫类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "薄衬衫",
+              name: "衬衫类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "加长卫衣",
+              name: "衬衫类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "裤子",
+              name: "衬衫类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "毛巾",
+              name: "衬衫类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "加长羽绒服",
+              name: "衬衫类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "小格子",
+              name: "衬衫类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "拖鞋",
+              name: "衬衫类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "袜子",
+              name: "衬衫类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "小米加步枪",
+              name: "衬衫类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "多米诺",
+              name: "衬衫类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             }
           ]
@@ -360,71 +361,71 @@ export default {
             "https://via.placeholder.com/242x96/f04c0F/808080 ?Text=上装类",
           shopList: [
             {
-              name: "七分/长衫",
+              name: "针织衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "白衬衫",
+              name: "针织衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "情侣衫",
+              name: "针织衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "蝙蝠衫",
+              name: "针织衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "卫衣",
+              name: "针织衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "羽绒服",
+              name: "针织衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "大长衣",
+              name: "针织衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "薄衬衫",
+              name: "针织衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "加长卫衣",
+              name: "针织衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "裤子",
+              name: "针织衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "毛巾",
+              name: "针织衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "加长羽绒服",
+              name: "针织衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "小格子",
+              name: "针织衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "拖鞋",
+              name: "针织衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "袜子",
+              name: "针织衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "小米加步枪",
+              name: "针织衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "多米诺",
+              name: "针织衫",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             }
           ]
@@ -434,71 +435,71 @@ export default {
             "https://via.placeholder.com/242x96/70d03F/808080 ?Text=上装类",
           shopList: [
             {
-              name: "七分/长衫",
+              name: "外套类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "白衬衫",
+              name: "外套类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "情侣衫",
+              name: "外套类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "蝙蝠衫",
+              name: "外套类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "卫衣",
+              name: "外套类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "羽绒服",
+              name: "外套类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "大长衣",
+              name: "外套类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "薄衬衫",
+              name: "外套类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "加长卫衣",
+              name: "外套类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "裤子",
+              name: "外套类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "毛巾",
+              name: "外套类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "加长羽绒服",
+              name: "外套类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "小格子",
+              name: "外套类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "拖鞋",
+              name: "外套类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "袜子",
+              name: "外套类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "小米加步枪",
+              name: "外套类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "多米诺",
+              name: "外套类",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             }
           ]
@@ -508,71 +509,71 @@ export default {
             "https://via.placeholder.com/242x96/00d01F/808080 ?Text=上装类",
           shopList: [
             {
-              name: "七分/长衫",
+              name: "裤和裙子",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "白衬衫",
+              name: "裤和裙子",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "情侣衫",
+              name: "裤和裙子",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "蝙蝠衫",
+              name: "裤和裙子",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "卫衣",
+              name: "裤和裙子",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "羽绒服",
+              name: "裤和裙子",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "大长衣",
+              name: "裤和裙子",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "薄衬衫",
+              name: "裤和裙子",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "加长卫衣",
+              name: "裤和裙子",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "裤子",
+              name: "裤和裙子",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "毛巾",
+              name: "裤和裙子",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "加长羽绒服",
+              name: "裤和裙子",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "小格子",
+              name: "裤和裙子",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "拖鞋",
+              name: "裤和裙子",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "袜子",
+              name: "裤和裙子",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "小米加步枪",
+              name: "裤和裙子",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "多米诺",
+              name: "裤和裙子",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             }
           ]
@@ -582,71 +583,71 @@ export default {
             "https://via.placeholder.com/242x96/500c1F/808080 ?Text=上装类",
           shopList: [
             {
-              name: "七分/长衫",
+              name: "家具和内着",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "白衬衫",
+              name: "家具和内着",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "情侣衫",
+              name: "家具和内着",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "蝙蝠衫",
+              name: "家具和内着",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "卫衣",
+              name: "家具和内着",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "羽绒服",
+              name: "家具和内着",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "大长衣",
+              name: "家具和内着",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "薄衬衫",
+              name: "家具和内着",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "加长卫衣",
+              name: "家具和内着",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "裤子",
+              name: "家具和内着",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "毛巾",
+              name: "家具和内着",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "加长羽绒服",
+              name: "家具和内着",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "小格子",
+              name: "家具和内着",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "拖鞋",
+              name: "家具和内着",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "袜子",
+              name: "家具和内着",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "小米加步枪",
+              name: "家具和内着",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "多米诺",
+              name: "家具和内着",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             }
           ]
@@ -656,71 +657,71 @@ export default {
             "https://via.placeholder.com/242x96/d020cF/808080 ?Text=上装类",
           shopList: [
             {
-              name: "七分/长衫",
+              name: "配件",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "白衬衫",
+              name: "配件",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "情侣衫",
+              name: "配件",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "蝙蝠衫",
+              name: "配件",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "卫衣",
+              name: "配件",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "羽绒服",
+              name: "配件",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "大长衣",
+              name: "配件",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "薄衬衫",
+              name: "配件",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "加长卫衣",
+              name: "配件",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "裤子",
+              name: "配件",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "毛巾",
+              name: "配件",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "加长羽绒服",
+              name: "配件",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "小格子",
+              name: "配件",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "拖鞋",
+              name: "配件",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "袜子",
+              name: "配件",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "小米加步枪",
+              name: "配件",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             },
             {
-              name: "多米诺",
+              name: "配件",
               bannerUrl: "https://via.placeholder.com/48/0ad0FF/808080"
             }
           ]
@@ -732,7 +733,7 @@ export default {
     selectedTab(index) {
       this.selectIndex = index;
       this.$nextTick(() => {
-        this.$refs.content.scrollTo(-50, 0);
+        this.$refs.content.scrollTo(-1, 0);
       });
     }
   }

@@ -11,7 +11,6 @@ const axios = require('axios');
 
 const app = express();
 
-//首页分类导航数据
 // 首页导航列表
 app.get(api.CATE_LIST_URL, (req, res) => {
     let result = mock({
