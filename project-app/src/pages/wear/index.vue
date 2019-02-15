@@ -32,6 +32,14 @@ export default {
         {
           title:'经典法兰绒系新上市',
           imgUrl:'https://via.placeholder.com/344x130/dnf'
+        },
+        {
+          title:'全家人温暖的外套单品都在这里',
+          imgUrl:'https://via.placeholder.com/344x130/fdn'
+        },
+        {
+          title:'无惧严寒，温暖也时尚有型',
+          imgUrl:'https://via.placeholder.com/344x130/ndf'
         }
       ]
     }
@@ -57,6 +65,9 @@ export default {
       padding-top: 0.1rem;
       p{
         padding: 0.1rem;
+      }
+      img{
+        border: 0.01rem solid #000;
       }
       .span{
         position: absolute;
